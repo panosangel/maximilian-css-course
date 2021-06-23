@@ -59,6 +59,7 @@ body {
 .plan--highlighted .plan__title {
     color: white;
 }
+
 .plan--highlighted .plan__price {
     color: #0e4f1f;
 }
@@ -200,4 +201,32 @@ body {
     color: #ff1b68;
     background: white;
     border: none;
+}
+
+.main-footer {
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #ccc;
 }
