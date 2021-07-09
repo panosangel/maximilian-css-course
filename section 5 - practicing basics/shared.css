@@ -61,12 +61,14 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     height: 1.5rem;
+    /* width: 20px; */
     display: inline-block;
     vertical-align: middle;
 }
 
 .main-header__brand img {
     height: 100%;
+    /* width: 100%; */
 }
 
 .main-nav {
