@@ -67,6 +67,7 @@ main {
     background: white;
     font-family: "AnonymousPro", sans-serif;
     font-weight: 700;
+    /*text-shadow: 2px 2px 7px rgb(185, 180, 180);*/
 }
 
 .clearfix {
