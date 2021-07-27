@@ -19,9 +19,10 @@ body {
     padding: 10px;
     border: 5px solid black;
     display: flex;
-    /* the below are the default values*/
-    /*flex-direction: row;*/
-    /*flex-wrap: nowrap;*/
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .item-1 {
