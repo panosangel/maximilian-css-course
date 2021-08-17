@@ -14,8 +14,10 @@
     grid-template-areas: "header header header header"
                          ". . main main"
                          "footer footer footer footer";
-    justify-items: stretch; /* Default option, applies to columns */
-    align-items: stretch; /* Default option, applies to rows */
+    justify-items: stretch; /* Default option, applies to x-axis */
+    align-items: stretch; /* Default option, applies to y-axis */
+    justify-content: stretch; /* Default option, applies to x-axis */
+    align-content: stretch; /* Default option, applies to y-axis */
 }
 
 .el1 {
