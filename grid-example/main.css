@@ -23,6 +23,8 @@
 .el1 {
     background: rgba(255, 154, 72, 0.5);
     grid-column: col-start 2 / col-end 2;
+    justify-self: stretch;
+    align-self: stretch;
 }
 
 .el2 {
