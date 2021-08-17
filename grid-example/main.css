@@ -12,7 +12,7 @@
     grid-gap: 10px 20px; /* grid-row-gap grid-column-gap */
 
     grid-template-areas: "header header header header"
-                         ". . main main"
+                         ". side main main"
                          "footer footer footer footer";
     justify-items: stretch; /* Default option, applies to x-axis */
     align-items: stretch; /* Default option, applies to y-axis */
@@ -20,9 +20,20 @@
     align-content: stretch; /* Default option, applies to y-axis */
 }
 
+@media (max-width: 40rem) {
+    .container {
+        grid-template-rows: [hd-start] 5rem [hd-end row-2-start] minmax(10px, 200px) [row-2-end row-3-start] 150px [row-3-end row-4-start] 100px [row-4-end];
+        grid-template-areas: "header header header header"
+                         "main main main main"
+                         "side side side side"
+                         "footer footer footer footer";
+    }
+}
+
 .el1 {
     background: rgba(255, 154, 72, 0.5);
     grid-column: col-start 2 / col-end 2;
+    grid-area: side;
     justify-self: stretch;
     align-self: stretch;
 }
