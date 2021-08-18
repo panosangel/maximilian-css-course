@@ -2,7 +2,11 @@
 @import "typography.scss";
 
 html {
-  font-size: 94.75%
+  font-size: 94.75%;
+
+  @media (min-width: 40rem) {
+    font-size: 125%;
+  }
 }
 
 body {
@@ -22,16 +26,24 @@ body {
   align-items: center;
   padding: $size-default * 3 0;
   box-sizing: border-box;
+
+  @media (min-width: 40rem) {
+    padding: 3rem 0;
+  }
 }
 
 .sass-introduction {
-  border: 0.05rem solid  map-get($colors, main);
+  border: 0.05rem solid map-get($colors, main);
   background: lighten(map-get($colors, main), 72%);
   padding: $size-default * 2;
   text-align: center;
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
   width: 90%;
   box-sizing: border-box;
+
+  @media (min-width: 40rem) {
+    width: 30rem;
+  }
 
   p {
     margin: 0;
@@ -46,6 +58,10 @@ body {
   margin: 2rem 0;
   width: 90%;
   box-sizing: border-box;
+
+  @media (min-width: 40rem) {
+    width: 30rem;
+  }
 }
 
 .section-header {
@@ -88,14 +104,6 @@ body {
 }
 
 @media (min-width: 40rem) {
-  html {
-    font-size: 125%;
-  }
-
-  .container {
-    padding: 3rem 0;
-  }
-
   .sass-introduction,
   .sass-details {
     width: 30rem;
